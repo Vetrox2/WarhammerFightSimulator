@@ -1,0 +1,43 @@
+.health-bar {
+    position: relative;
+    top: 100px;
+    width: 30%;
+    height: 20px;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #000;
+}
+
+.health-fill {
+    height: 100%;
+    width: 100%;
+    background: red;
+    transition: width 0.3s ease-in-out;
+}
+
+.character {
+    position: absolute;
+}
+
+.dead{
+    opacity: 0;
+}
+
+.animate-damage {
+    animation: damageAnim 0.2s linear 10;
+}
+
+@keyframes damageAnim {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

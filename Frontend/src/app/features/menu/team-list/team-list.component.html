@@ -1,0 +1,18 @@
+<div class="tile-container">
+    <div class="character-selection">
+        <h1>Add Character</h1>
+        <div class="avatar-list">
+            <div *ngFor="let char of defaultCharacters()" class="avatar" (click)="addCharacter(char)">
+                <img [src]="char.smallURL" [alt]="char.name" />
+                <p>{{ char.name }}</p>
+            </div>
+        </div>
+    </div>
+
+    <h2>Selected Characters</h2>
+    <div class="character-tiles">
+        <div *ngFor="let char of selectedCharacters(); let i = index">
+            <app-character-tile [character]="char" (remove)="removeCharacter(i)"></app-character-tile>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Default",
+        "avatar_url": "/assets/images/avatars/elf.png",
+        "character_url": "/assets/images/characters/elf.png"
+    },
+    {
+        "name": "Elf",
+        "avatar_url": "/assets/images/avatars/elf.png",
+        "character_url": "/assets/images/characters/elf.png"
+    },
+    {
+        "name": "Krasnolud",
+        "avatar_url": "/assets/images/avatars/dwarf.png",
+        "character_url": "/assets/images/characters/dwarf.png"
+    },
+    {
+        "name": "Człowiek",
+        "avatar_url": "/assets/images/avatars/warrior.png",
+        "character_url": "/assets/images/characters/warrior.png"
+    },
+    {
+        "name": "Niziołek",
+        "avatar_url": "/assets/images/avatars/thug-amogus.jpg",
+        "character_url": "/assets/images/characters/niziolek.png"
+    },
+    {
+        "name": "Ork",
+        "avatar_url": "/assets/images/avatars/orc.png",
+        "character_url": "/assets/images/characters/orc.png"
+    }
+]

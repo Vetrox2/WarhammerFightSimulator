@@ -1,0 +1,80 @@
+<!-- <div class="relative w-full flex px-10 py-10">
+  <div class="relative w-1/2 h-full">
+    @for (item of a?.teamA; track $index) {
+    <div class="flex">
+      <div>
+        <div class="flex justify-center items-center">
+          <i class="ra ra-health"></i>
+          {{item.health}}
+          @switch (item.rightHand?.weaponName) {
+          @case (null) {
+          <i class="ra ra-hand"></i>
+          }
+          @case (1) {
+          <i class="ra ra-sword"></i>
+          }
+          @case (2) {
+          <i class="ra ra-axe"></i>
+          }
+          @case (3) {
+          <i class="ra ra-bolt-shield"></i>
+          }
+          }
+        </div>
+        <img [src]="item.bigURL">
+      </div>
+
+    </div>
+    }
+  </div>
+
+  <div class="relative w-1/2 h-full">
+    @for (item of a?.teamB; track $index) {
+    <div class="flex justify-end">
+      <div>
+        <div class="flex justify-center items-center">
+          <i class="ra ra-health"></i>
+          {{item.health}}
+          @switch (item.rightHand?.weaponName) {
+          @case (null) {
+          <i class="ra ra-hand"></i>
+          }
+          @case (1) {
+          <i class="ra ra-sword"></i>
+          }
+          @case (2) {
+          <i class="ra ra-axe"></i>
+          }
+          @case (3) {
+          <i class="ra ra-bolt-shield"></i>
+          }
+          }
+        </div>
+        <img [src]="item.bigURL">
+      </div>
+
+    </div>
+    }
+  </div>
+</div> -->
+<div class="background">
+  <div class="relative w-full h-screen flex py-10 overflow-x-hidden">
+    <div class="relative w-1/2 h-full">
+      <div *ngFor="let char of teamA(); let index = index; trackBy: trackByFn">
+        <app-character [character]="char" [position]="getImagePosition(index, false)"
+          [damagedCharId]="damagedCharacter"></app-character>
+      </div>
+    </div>
+
+    <div class="relative w-1/2 h-full">
+      <div *ngFor="let char of teamB(); let index = index; trackBy: trackByFn">
+        <app-character [character]="char" [position]="getImagePosition(index, true)"
+          [damagedCharId]="damagedCharacter"></app-character>
+      </div>
+    </div>
+
+    <div class="battle-container">
+      <div class="animation" #animationElement><img src="/assets/images/equipment/sword_icon.png"></div>
+    </div>
+  </div>
+</div>

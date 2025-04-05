@@ -1,0 +1,26 @@
+export enum AudioTrack {
+  MenuBackground = 'MenuBackground',
+  StartBattle = 'StartBattle',
+  BattleBackground = 'BattleBackground',
+
+  DwarfAttack = 'DwarfAttack',
+  DwarfDeath = 'DwarfDeath',
+  DwarfHittake = 'DwarfHittake',
+  ElfAttack = 'ElfAttack',
+  ElfDeath = 'ElfDeath',
+  ElfHittake = 'ElfHittake',
+  NiziolekAttack = 'NiziolekAttack',
+  NiziolekHittake = 'NiziolekHittake',
+  OrcAttack = 'OrcAttack',
+  OrcDeath = 'OrcDeath',
+  OrcHittake = 'OrcHittake',
+  WarriorAttack = 'WarriorAttack',
+  WarriorDeath = 'WarriorDeath',
+  WarriorHittake = 'WarriorHittake',
+
+  MetalHit = 'MetalHit',
+  ShieldHit = 'ShieldHit',
+  SwordAttack = 'SwordAttack',
+  SwordHit = 'SwordHit',
+  WeaponSwoossh = 'WeaponSwoossh',
+}

@@ -1,0 +1,12 @@
+<div class="character-tile">
+    <div class="container-left">
+        <img [src]="character().smallURL"
+            [alt]="character().name" />
+        <p>{{ character().name }}</p>
+        <p><i class="ra ra-sword"></i> {{ character().strength }}</p>
+        <p><i class="ra ra-spinning-sword"></i> {{ character().numberOfAttacks }}</p>
+        <p><i class="ra ra-health"></i> {{ character().health }}</p>
+        <p><i class="ra ra-shield"></i> {{ character().resistance }}</p>
+    </div>
+    <button class="delete-button" (click)="removeCharacter()">Delete</button>
+</div>

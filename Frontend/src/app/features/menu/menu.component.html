@@ -1,0 +1,13 @@
+<div *ngIf="isGameLoading()" class="loadingScreen">
+    <div class="spinner"></div>
+    <h1>Loading Battle...</h1>
+  </div>
+<div class="main-container">
+    <div class="grid-container">
+        <app-team-list [teamSide]="CharacterTeam.TeamA" class="h-full"></app-team-list>
+        <div class="flex items-center">
+            <button class="start-button" (click)="startBattle()">Battle</button>
+        </div>
+        <app-team-list [teamSide]="CharacterTeam.TeamB" class="h-full"></app-team-list>
+    </div>
+</div>
